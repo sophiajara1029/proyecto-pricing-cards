@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+:root {
+  --color-price: #26293a;
+  --color-features: #9c9191;
+  --color-boton: #fff;
+  --background-color: #5175ff;
+}
+*/
+
+body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #26293a;
+  font-family: "Roboto", serif;
+}
+
+h2{
+  font-size: 16px;
+}
+
+h3{
+  font-size: 35px;
+  margin: 16px auto;
+}
+
+.titulo{
+  color: #26293a;
+}
+.contenedor{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+}
+
+.caja{
+  height: 400px;
+  border-radius: 10px;
+  width: 280px;
+  font-size: 14px;
+  padding-top: 35px;
+}
+
+.cajaA{
+  background-color: white;
+  color: #9c9191;;
+}
+
+.cajaB{
+  background-color:#5175ff;
+  color: white;
+}
+
+.descripcion{
+  margin-bottom: 10px;
+}
+
+.texto{
+  padding: 10px;
+}
+
+button{
+  border-radius: 18px;
+  height: 36px;
+  width: 150px;
+  border: none;
+  margin-top: 30px;
+}
+
+.cajaA button{
+  background-color: #26293a;
+  color: white;
+}
+
+.cajaB button{
+  background-color: white;
+}
+
+/* Desktop grande (ancho máximo 1920) */
+@media (max-width: 1920px) {
+  .contenedor {
+    grid-template-columns: repeat(3, auto);
+    gap: 120px;
+  }
+}
+
+/* Tablet: dos columnas */
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(2, auto);
+    gap: 100px;
+  }
+}
+
+/* Móvil: una columna */
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: auto;  /* 1 columna ocupa todo el ancho disponible */
+    gap: 20px;
+  }
+}
