@@ -40,6 +40,7 @@ h3{
   justify-content: center;
   align-items: start;
   text-align: center;
+  gap: 120px;
 }
 
 .caja{
@@ -85,7 +86,6 @@ button{
   background-color: white;
 }
 
-/* Desktop grande (ancho máximo 1920) */
 @media (max-width: 1920px) {
   .contenedor {
     grid-template-columns: repeat(3, auto);
@@ -93,7 +93,6 @@ button{
   }
 }
 
-/* Tablet: dos columnas */
 @media (max-width: 1024px) {
   .contenedor {
     grid-template-columns: repeat(2, auto);
@@ -101,10 +100,9 @@ button{
   }
 }
 
-/* Móvil: una columna */
 @media (max-width: 768px) {
   .contenedor {
-    grid-template-columns: auto;  /* 1 columna ocupa todo el ancho disponible */
+    grid-template-columns: auto;
     gap: 20px;
   }
 }
